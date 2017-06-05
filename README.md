@@ -7,10 +7,19 @@ are provided in `contrib/deeplearning4j` to get you started.
 
 ## Using deep-runner
 
-* --data input-file
-* --out output-file
-* --in-model deep-runner-model
-* --out-model
+To run deep-runner
+
+    >java deep-runner [options] spec-file.yaml
+
+*Command Line Options*
+
+
+* --help : display command usage with available options
+* --train : when present input data will be used to geneate a model as output
+* --data input-file : data may supplied from STDIN or specified as the argument to this option
+* --out output-file : data will be sent to STDOUT or specfied as the argument to this option
+* --model deep-runner-model
+* --debug : when present debug output will be generated
 
 ## Setting up deep-runner learning
 
